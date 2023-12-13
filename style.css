@@ -1,0 +1,90 @@
+table {
+  margin-top: 20px;
+}
+table, tr, td {
+  border: 2px solid;
+  text-align: center;
+} 
+
+fieldset {
+  background-color:#A73121;
+  padding:20px;
+  border-radius:10px;
+  font-family: "Roboto", helvetica;
+font-size: 16px;
+  color:black;
+}
+
+label {
+  display:inline-block;
+  margin-bottom:20px;
+  color:#FFFFFF;
+}
+
+input {
+  float:right;
+  margin-right:70px;
+  width:250px;
+}
+
+input:invalid {
+  background-color:#FFFFFF;
+}
+
+input:valid {
+  background-color:lightgrey;
+}
+
+th {
+  cursor: pointer;
+  background-color:#A73121
+ }  
+th:hover {
+background-color:#FFFFFF;
+}
+
+body {
+background-color:#F2E8C6;
+font-family: "Roboto", helvetica;
+font-size: 16px;
+text-rendering: optimizeLegibility;
+}
+
+tr:hover td {
+background:#952323;
+color:#FFFFFF;
+border-top: 1px solid #22262e;
+}
+
+legend {
+background-color:#A73121;
+font-family: helvetica;
+font-size: 20px;
+padding:10px;
+border-radius:10px;
+color:#FFFFFF;
+
+}
+
+.search {
+background-color:#A73121;
+font-family: helvetica;
+font-size: 20px;
+padding:15px;
+border-radius:25px;
+display:inline-block;
+}
+
+.btn-delete {
+  cursor: pointer;
+}
+
+.btn {
+  font-family: helvetica;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background:grey;
+}

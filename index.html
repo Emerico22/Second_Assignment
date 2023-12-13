@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>To Watch List</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body> 
+	<form onsubmit="return formSubmitted();">
+	 <fieldset>
+    <legend>Movie informations :</legend>
+		<label>
+			Name : 
+			<input type="text" id="name" required>
+		</label>
+		<label>
+			Plateform : 
+			<input type="text" id="plateform" required>
+		</label>
+		<label>
+			Actors : 
+			<input type="text" id="actors" required>
+		</label>
+		<br>
+     	<label>
+			Director : 
+			<input type="text" id="director">
+		</label>
+     <label>
+			Year : 
+			<input type="text" id="year">
+		</label><label>
+			Url to image : 
+			<input type="text" id="url">
+		</label>
+		<br>
+		<button class=btn>Add Movie/Serie to watch</button>
+		 </fieldset>
+	</form>
+	
+	<div class="search"> 
+		<label>Research Movie/Serie :
+		<input type="search" id="search" placeholder="Search..." oninput="cm.searchMovies(this.value);"></label>
+	  </div>
+	 
+	  <p><button class=btn onclick="emptyList();">Empty</button> 
+		<button class=btn onclick="cm.save();">Save</button> 
+	  <button class=btn onclick="loadList();">Load</button>
+	   </p>
+  
+  <h2>To watch list :</h2> 
+  <div id="movies"></div>
+	
+</body>
+</html>
